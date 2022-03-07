@@ -1,4 +1,4 @@
-/*package pages;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,4 +24,4 @@ public class PageLogin {
         Helpers helper = new Helpers();
         helpers.sleepSeconds(4);
     }
-}*/
+}
