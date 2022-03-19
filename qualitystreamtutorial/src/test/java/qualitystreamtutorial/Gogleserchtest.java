@@ -22,26 +22,26 @@ public class Gogleserchtest {
 		
 		driver = new ChromeDriver();
 		
-		driver.manage().window().maximize();//to appear on the screen//
+		driver.manage().window().maximize(); //  to appear on the screen  //
 		
 		driver.get("https//www.google.com/");
 		
 	}
 	@SuppressWarnings("deprecation")
-	@Test //steps to run the test//
+	@Test                                    //  steps to run the test  //
 	
 	public void restGooglePage() {
-		WebElement searchbox = driver.findElement(By.name("q"));//element id//
+		WebElement searchbox = driver.findElement(By.name("q"));   //    element id    //
 		
-		searchbox.clear();//to delete what is in the search box//
+		searchbox.clear();      //         to delete what is in the search box      //
 		
-		searchbox.sendKeys("quality-stream Intruduccion a la Automatizacion de Pruebas de Software");//search is required//
+		searchbox.sendKeys("quality-stream Intruduccion a la Automatizacion de Pruebas de Software");     //       search is required      //
 		
 		searchbox.submit();
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		assertEquals("quality-tream Introduccion a la Automatizacion de Pruebas de Software - Google Search", driver.getTitle());//make sure that is the title of the page//
+		assertEquals("quality-tream Introduccion a la Automatizacion de Pruebas de Software - Google Search", driver.getTitle());     //   make sure that is the title of the page  //
 	
 	}
 	@After
