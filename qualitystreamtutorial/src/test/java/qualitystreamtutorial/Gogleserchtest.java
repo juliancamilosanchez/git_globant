@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;/*importar los archivos para ejecucion*/
+import org.openqa.selenium.chrome.ChromeDriver;   /* import files for execution  */
 
 public class Gogleserchtest {
 
